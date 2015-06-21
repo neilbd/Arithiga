@@ -315,18 +315,23 @@ window.addEventListener('load', function(){
 
 		plus = new Q.Operator({asset: 'plussymbol.png'});
 		plus.setOperator('plus');
+		plus.setPosX(200);
 
 		minus = new Q.Operator({asset: 'minussymbol.png'});
 		minus.setOperator('minus');
+		minus.setPosX(350);
 
 		multiply = new Q.Operator({asset: 'multiplysymbol.png'});
 		multiply.setOperator('multiply');
+		multiply.setPosX(500);
 
 		power = new Q.Operator({asset: 'caret.png'});
 		power.setOperator('power');
+		power.setPosX(650);
 
 		divide = new Q.Operator({asset: 'dividesymbol.png'});
 		divide.setOperator('divide');
+		divide.setPosX(800);
 
 		all_operators = new Array(plus,minus,multiply,power,divide);
 
@@ -370,6 +375,7 @@ window.addEventListener('load', function(){
 
 		for(var i = 0; i < 9; i++){
 			numbers[i].setValue(i+1);
+			numbers[i].setPosX((i+1)*88);
 			Q.stage().insert(numbers[i]);
 		}
 
@@ -484,6 +490,10 @@ window.addEventListener('load', function(){
 
 		getOperator: function(){
 			return this.operator;
+		},
+
+		setPosX: function(x){
+			this.p.x = x;
 		},
 
 		getPosX: function(){
