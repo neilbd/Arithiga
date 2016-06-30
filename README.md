@@ -18,3 +18,5 @@ followed by the numbers once an operator is hit, and so on. To shoot, the player
 This version of Arithiga is designed for those with visual impairments. As a result, the game has a speech feature where a voice
 tells the player the number to get, the current number and points the user has accumulated, and what number or operator
 the user is selecting.
+
+The game can be accessed at https://cs.unc.edu/~neilbd/Arithiga.
